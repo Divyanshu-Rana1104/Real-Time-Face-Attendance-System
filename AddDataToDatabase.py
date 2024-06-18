@@ -13,7 +13,16 @@ firebase_admin.initialize_app(cred, {
 ref = db.reference('Students')
 
 data = {
-   
+    "2018267":
+        {
+            "name": "Ayush Negi",
+            "major": "Computer",
+            "starting_year": 2020,
+            "total_attendance": 7,
+            "standing": "A",
+            "year": 4,
+            "last_attendance_time": "2022-12-11 00:54:34"
+        },
     "852741":
         {
             "name": "Piyush Bidaliya",
@@ -21,16 +30,6 @@ data = {
             "starting_year": 2021,
             "total_attendance": 12,
             "standing": "B",
-            "year": 1,
-            "last_attendance_time": "2022-12-11 00:54:34"
-        },
-         "888888":
-        {
-            "name": "Divyanshu Rana",
-            "major": "C++",
-            "starting_year": 2020,
-            "total_attendance": 7,
-            "standing": "A",
             "year": 1,
             "last_attendance_time": "2022-12-11 00:54:34"
         },
@@ -44,8 +43,6 @@ data = {
             "year": 2,
             "last_attendance_time": "2022-12-11 00:54:34"
         }
-
-        
 }
 
 for key, value in data.items():
